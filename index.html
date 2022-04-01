@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+    <link href="mostrar.html ">
+</head>
+
+<body>
+    <div>
+        <h1 id="titulo">Cadastro para compra de carro</h1>
+    </div>
+    <form action="mostrar.html" method="POST">
+        <div class="campo">
+            <label for="nome"><strong>Nome Completo:</strong></label>
+            <input type="text" name="nome" id="nome" required>
+        </div>
+
+        <div class="campo">
+            <label for="email"><strong>Email:</strong></label>
+            <input type="email" name="email" id="email" required>
+        </div>
+
+        <div class="campo">
+            <label><strong>Data de nascimento:</strong></label>
+            <input type="date" name="data" id="data">
+        </div>
+
+        <div class="campo">
+            <div id="msg"></div>
+            <label for="cep"><strong>CEP:</strong></label>
+            <input type="text" name="cep" id="cep" placeholder="Ex. 12345000">
+            <br>
+        </div>
+
+        <div class="campo">
+            <label for="estado"><strong>Estado:</strong></label>
+            <input type="text" name="estado" id="estado">
+        </div>
+
+        <div class="campo">
+            <label for="cidade"><strong>Cidade:</strong></label>
+            <input type="text" name="cidade" id="cidade">
+        </div>
+
+        <div class="campo">
+            <label for="bairro"><Strong>Bairro:</Strong></label>
+            <input type="text" name="bairro" id="bairro">
+        </div>
+
+        <div class="campo">
+            <label for="loradouro"><strong>Logradouro:</strong></label>
+            <input type="text" name="logradouro" id="logradouro">
+        </div>
+
+        <div class="campo">
+            <label for="numero"><strong>Número:</strong></label>
+            <input type="text" name="quantity" maxlength="60" id="numero" placeholder="número ou s/n">
+        </div>
+
+        <div class="campo">
+            <label for="complemento"><strong>Complemento:</strong></label>
+            <input type="text" name="complemento" id="complemento" placeholder="Próximo a, apartamento, sala, conjunto, edificio, andar, etc.">
+        </div>
+
+        <button class="button" type="submit" id="button">Enviar</button>
+        <button class="botao" type="reset">Limpar</button>
+    </form>
+    <script src="script.js"></script>
+</body>
